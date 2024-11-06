@@ -63,6 +63,13 @@ p {
     height: 60px;
     border-radius: 50%;
     border: 3px solid var(--white-color);
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.profile-pic:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
 }
 
 .library-pic {
@@ -71,6 +78,13 @@ p {
     border: 3px solid var(--white-color);
     position: absolute;
     right: 30px;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.library-pic:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
 }
 
 /* Main Content */
@@ -90,6 +104,14 @@ main {
 
     border-style: solid;
     border-color: var(--black-color);
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.current-reading:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
 }
 
 .book-card {
@@ -137,6 +159,14 @@ main {
 
     border-style: solid;
     border-color: var(--black-color);
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.categories:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
 }
 
 .category-list {
@@ -165,6 +195,13 @@ main {
 
     border-style: solid;
     border-color: var(--black-color);
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.trending-books:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
 }
 
 .book-list {
