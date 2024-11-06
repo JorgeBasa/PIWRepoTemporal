@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=SUSE&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <img class="profile-pic" src="src/icons/user-icon.png" alt="Foto de perfil" />
+        <h3>Hola, Usuario</h3>
+        <img class="library-pic" src="src/icons/librery-logo.png"/>
+    </header>
+
+    <main>
+        <section class="current-reading">
+            <h1>Actualmente leyendo</h1>
+            <div class="book-card">
+                <img class="book-cover" src="https://via.placeholder.com/134x214" alt="Portada del libro" />
+                <div class="book-info">
+                    <h2 class="book-title">El Imperio Final</h2>
+                    <p class="book-author">Brandon Sanderson</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 54%;">54%</div>
+                    </div>
+                    <p class="remaining-chapters">8 Capítulos Restantes</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories">
+            <h1>Categorías</h1>
+            <div class="category-list">
+                <div class="category"><p>Misterio</p></div>
+                <div class="category"><p>Ciencia Ficción</p></div>
+                <div class="category"><p>Terror</p></div>
+                <div class="category"><p>Fantasía</p></div>
+                <div class="category"><p>Aventura</p></div>
+                <div class="category"><p>Psicología</p></div>
+                <div class="category"><p>Novela</p></div>
+            </div>
+        </section>
+
+        <section class="trending-books">
+            <h1>Libros en Tendencia</h1>
+            <div class="book-list">
+                <div class="book">
+                    <img src="https://via.placeholder.com/102x159" alt="Portada de libro en tendencia" />
+                    <div class="book-info">
+                        <p class="book-title">El Camino de los Reyes</p>
+                        <p class="book-author">Brandon Sanderson</p>
+                    </div>
+                </div>
+                <div class="book">
+                    <img src="https://via.placeholder.com/102x159" alt="Portada de libro en tendencia" />
+                    <div class="book-info">
+                        <p class="book-title">Hasta que el Verano se Acabe</p>
+                        <p class="book-author">Connor Hamilton</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
