@@ -1,0 +1,193 @@
+:root {
+    --primary-color: #F96841;
+    --black-color: #303030;
+    --white-color: #E6E6E6;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: var(--black-color);
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+h1 {
+    font-family: "SUSE", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+h2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+h3 {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+p {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    color: var(--black-color);
+}
+
+.header h1 {
+    font-size: 24px;
+    margin-left: 15px;
+}
+
+.profile-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid var(--white-color);
+}
+
+.library-pic {
+    width: 60px;
+    height: 60px;
+    border: 3px solid var(--white-color);
+    position: absolute;
+    right: 30px;
+}
+
+/* Main Content */
+main {
+    width: 90%;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+/* Current Reading Section */
+.current-reading {
+    background-color: var(--white-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+
+    border-style: solid;
+    border-color: var(--black-color);
+}
+
+.book-card {
+    display: flex;
+    gap: 20px;
+}
+
+.book-cover {
+    width: 134px;
+    height: 214px;
+    border-radius: 5px;
+}
+
+.book-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.progress {
+    height: 100%;
+    background-color: var(--primary-color);
+    color: #FFF;
+    text-align: center;
+    line-height: 10px;
+    font-size: 12px;
+}
+
+/* Categories Section */
+.categories {
+    background-color: var(--white-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+
+    border-style: solid;
+    border-color: var(--black-color);
+}
+
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.category {
+    padding: 8px 15px;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    border-radius: 5px;
+    font-size: 14px;
+
+    border-style: solid;
+    border-color: var(--black-color);
+}
+
+/* Trending Books Section */
+.trending-books {
+    background-color: var(--white-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    border-style: solid;
+    border-color: var(--black-color);
+}
+
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.book {
+    width: 120px;
+    text-align: center;
+}
+
+.book img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.book-title {
+    margin-top: 8px;
+}
+
+.book-author {
+    font-size: 14px;
+    color: var(--black-color);
+}
