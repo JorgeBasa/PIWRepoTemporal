@@ -1,0 +1,152 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    margin-bottom: 10px;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #2B6777;
+    color: #FFF;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin-left: 15px;
+}
+
+.profile-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid #FFF;
+}
+
+/* Main Content */
+main {
+    width: 90%;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+/* Current Reading Section */
+.current-reading {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.book-card {
+    display: flex;
+    gap: 20px;
+}
+
+.book-cover {
+    width: 134px;
+    height: 214px;
+    border-radius: 5px;
+}
+
+.book-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.progress {
+    height: 100%;
+    background-color: #2B6777;
+    color: #FFF;
+    text-align: center;
+    line-height: 10px;
+    font-size: 12px;
+}
+
+/* Categories Section */
+.categories {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.category {
+    padding: 8px 15px;
+    background-color: #C8D8E4;
+    color: #2B6777;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Trending Books Section */
+.trending-books {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.book {
+    width: 120px;
+    text-align: center;
+}
+
+.book img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.book-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.book-author {
+    font-size: 14px;
+    color: #555;
+}
