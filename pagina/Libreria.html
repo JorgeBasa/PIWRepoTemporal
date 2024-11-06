@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/libreria.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">Julia</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="Index.html">Pagina Principal</a></li>
+            <li><a href="login.html">Acceder</a></li>
+        </ul>
+        <div class="burger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <h1>My Book List</h1>
+    <ul id="bookList">
+        <!-- List of books will be here -->
+    </ul>
+
+    <div id="addBookContainer">
+        <input type="text" id="addBookTitle" placeholder="Enter book title">
+        <textarea id="addBookDescription" rows="3" placeholder="Enter book description"></textarea>
+        <input type="text" id="addBookImageUrl" placeholder="Enter book image URL (optional)">
+        <button id="addBookButton">Add Book</button>
+    </div>
+    <script src="js/libreria.js"></script>
+
+    
+    </body>
+</html>
