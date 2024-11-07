@@ -231,6 +231,20 @@ main {
 
 /*--- slidebar ---*/
 
+#specificbutton{
+    text-align: center;
+}
+
+.orange-button{
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
 .toggle-button {
     padding: 10px 20px;
     background-color: var(--white-color);
@@ -241,8 +255,14 @@ main {
     transition: background-color 0.3s;
 }
 
+.orange-button:hover{
+    background-color: var(--white-color);
+    color: var(--primary-color);
+}
+
 .toggle-button:hover {
-    background-color: #ffe3da;
+    background-color: var(--primary-color);
+    color: var(--white-color);
 }
 
 /* Sidebar deslizante */
@@ -284,6 +304,21 @@ main {
     transition: all 0.3s ease;
 }
 .back-pic:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+.side-pic{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid var(--white-color);
+    position:absolute;
+    top: 20px;
+    left: 0px;
+}
+
+.side-pic:hover{
     transform: scale(1.1);
     transition: transform 0.2s;
 }

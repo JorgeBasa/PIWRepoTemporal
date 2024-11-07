@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=SUSE&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <a href="index.html"><img class="side-pic" src="src/icons/back-icon.png"/></a>
+            <h1>Agrega tu libro</h1>
+    
+            <form action="">
+                <label for="cover">Hasta 5 fotografías máximo</label><br>
+                <input type="file"> <br> <br> <br>
+    
+                <label for="autor">Autor:</label>
+                <input type="text">
+                
+                <label for="editorial">&emsp;&emsp;&emsp;Editorial:</label>
+                <input type="text">  <br> <br> <br>
+                
+                <label for="genre">Género:</label>
+                <input type="text">
+    
+                <label for="postdate">&emsp;&emsp;Fecha de publicación:</label>
+                <input type="date"><br> <br> <br>
+
+                <label for="lectstart">Fecha de inicio de lectura:</label>
+                <input type="date">
+                
+                <label for="genre">&emsp;&emsp;&emsp;No. de páginas/capítulos:</label>
+                <input type="number" min="1" max="9999"> <br> <br> <br>
+    
+                <a href="index.html"><input class="orange-button" type="submit" value="AGREGAR"></a>
+                
+            </form>
+        </main>
+    </body>
+</html>
