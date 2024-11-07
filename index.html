@@ -67,14 +67,57 @@
     </main>
 
     <aside id="sidebar" class="sidebar">
-        <img class="back-pic" src="src/icons/back-icon.png" onclick="toggleSidebar()"/>
-        <h2>Lista de Libros</h2>
-        <ul class="book-list">
-            <li>Libro 1: El Nombre del Viento</li>
-            <li>Libro 2: La Sombra del Viento</li>
-            <li>Libro 3: Cien Años de Soledad</li>
-            <li>Libro 4: La Ciudad y los Perros</li>
-        </ul>
+        <div class="list-section">
+            <img class="back-pic" src="src/icons/back-icon.png" onclick="toggleSidebar()"/>
+            <img class="add-pic" src="src/icons/add-icon.png" onclick=""/>
+            <div class="content-list">
+                <h1>Lista de Lectura</h1>
+                <div class="book-list">
+                    <!-- Libro 1 -->
+                    <div class="book-item">
+                        <div class="tags">
+                            <span>#Fantasía</span> <span>#Épica</span>
+                        </div>
+                        <div class="book-details">
+                            <div class="info">
+                                <h2>El Camino de los Reyes</h2>
+                                <p>Brandon Sanderson</p>
+                            </div>
+                            <div class="space-flex"></div>
+                            <img src="https://via.placeholder.com/80x120" alt="El Camino de los Reyes">
+                        </div>
+                    </div>
+                    <!-- Libro 2 -->
+                    <div class="book-item">
+                        <div class="tags">
+                            <span>#Fantasía</span> <span>#Épica</span>
+                        </div>
+                        <div class="book-details">
+                            <div class="info">
+                                <h2>El Camino de los Reyes</h2>
+                                <p>Brandon Sanderson</p>
+                            </div>
+                            <div class="space-flex"></div>
+                            <img src="https://via.placeholder.com/80x120" alt="El Camino de los Reyes">
+                        </div>
+                    </div>
+                    <!-- Libro 3 -->
+                    <div class="book-item">
+                        <div class="tags">
+                            <span>#Fantasía</span> <span>#Épica</span>
+                        </div>
+                        <div class="book-details">
+                            <div class="info">
+                                <h2>El Camino de los Reyes</h2>
+                                <p>Brandon Sanderson</p>
+                            </div>
+                            <div class="space-flex"></div>
+                            <img src="https://via.placeholder.com/80x120" alt="El Camino de los Reyes">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </aside>
 
     <script src="js/script.js"></script>
