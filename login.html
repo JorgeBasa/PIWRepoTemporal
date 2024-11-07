@@ -9,9 +9,39 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=SUSE&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body class="altbody">
         <main>
+            <div class="centralizame">
+                <img class="central-pic" src="../PIWRepoTemporal/src/icons/librery-logo_Alt.png" alt="">
+                <p>¡Bienvenido!</p>
+                <br><br><br><br>
+            </div>
+            <div class="grayform">
+                <form action="">
+                    <label for="mail">Email:</label>
+                    <br><br>
+                    <input class="grayinputs" type="mail" name="mail">
+                    <br><br><br><br>
+                    <label for="Contraseña">Contraseña:</label>
+                    <br><br>
+                    <input class="grayinputs" type="password" name="Contraseña">
+                    <br><br>
+                    <input type="checkbox" name="recuerdame"/> 
+                    <label for="recuerdame">Recordarme</label>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="" class="enlaceoscuro">Olvidé mi contraseña</a>
 
+                </form>
+                <div class="centralizame">
+                    <br><br>
+                    <button onclick="location.href = 'index.html';" id="specific-button" class="orange-button">
+                        Log In
+                    </button>
+                    <br><br>
+                    <p>
+                        No tengo una cuenta. <a href="registro.html" class="enlaceoscuro">Registrarme</a>
+                    </p>
+                </div>
+            </div>
         </main>
     </body>
 </html>
