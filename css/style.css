@@ -209,14 +209,14 @@ main {
     border-style: solid;
     border-color: var(--black-color);
 
-    cursor: pointer;
-    transition: all 0.3s ease;
+    /*cursor: pointer;
+    transition: all 0.3s ease;*/
 }
 
-.categories:hover {
+/*.categories:hover {
     transform: scale(1.1);
     transition: transform 0.2s;
-}
+}*/
 
 .category-list {
     display: flex;
@@ -234,6 +234,15 @@ main {
     border-style: solid;
     border-color: var(--black-color);
 }
+
+.active, .category:hover {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #F96841;
+    color: white;
+    transform: scale(1.2);
+    transition: transform 0.2s;
+  }
 
 /* Trending Books Section */
 .trending-books {
