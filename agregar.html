@@ -13,8 +13,21 @@
         <main>
             <a href="index.html"><img class="side-pic" src="src/icons/back-icon.png"/></a>
             <h1>Agrega tu libro</h1>
+            
+            <ul id="bookList">
+                <!-- List of books will be here -->
+                </ul>
+                
+                <div id="addBookContainer">
+                    <input type="text" id="addBookTitle" placeholder="Enter book title">
+                    <textarea id="addBookDescription" rows="3" placeholder="Enter book description"></textarea>
+                    <input type="text" id="addBookImageUrl" placeholder="Enter book image URL (optional)">
+                    <button id="addBookButton">Add Book</button>
+                </div>
+                
+                <script src="js/libreria.js"></script>
     
-            <form action="">
+            <!---<form action="">
                 <label for="cover">Hasta 5 fotografías máximo</label><br>
                 <input type="file"> <br> <br> <br>
     
@@ -38,7 +51,7 @@
     
                 <a href="index.html"><input class="orange-button" type="submit" value="AGREGAR"></a>
                 
-            </form>
+            </form> --->
         </main>
     </body>
 </html>
