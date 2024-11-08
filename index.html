@@ -71,7 +71,7 @@
     <aside id="sidebar" class="sidebar">
         <div class="list-section">
             <img class="back-pic" src="src/icons/back-icon.png" onclick="toggleSidebar()"/>
-            <a href="agregar.html"><img class="add-pic" src="src/icons/add-icon.png" onclick=""/></a>
+            <img class="add-pic" src="src/icons/add-icon.png" onclick="toggleAdd()"/>
             <div class="content-list">
                 <h1>Lista de Lectura</h1>
                 <div class="book-list">
@@ -125,6 +125,13 @@
             </div>
         </div>
     </aside>
+
+    <div id="addcard" class="addcard">
+        <img class="back-pic" src="src/icons/back-icon.png" onclick="toggleAdd()"/>
+        
+    </div>
+
+    <div id="overlay" class="overlay"></div>
 
     <script src="js/script.js"></script>
 </body>
