@@ -314,17 +314,38 @@ main {
     color: var(--white-color);
 }
 
-/* Sidebar deslizante */
+/* Sidebar */
 .sidebar {
     position: fixed;
     top: 0;
-    right: -100%; /* Oculto fuera de la pantalla */
+    right: -100%; /* Hidden off-screen by default */
     width: 100%;
     height: 100vh;
     background-color: var(--primary-color);
     padding: 20px;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-    transition: right 0.4s ease; /* Animación de deslizamiento */
+    transition: right 0.4s ease; /* Slide-in animation */
+    overflow-y: auto; /* Enables vertical scrolling */
+}
+
+/* Adjust content list to fit within the sidebar */
+.content-list {
+    padding: 45px;
+    flex: 1;
+    max-height: calc(100vh - 90px); /* Adjust height to fit within the sidebar with some padding */
+    overflow-y: auto; /* Enables scroll within content */
+}
+
+/* Optional: Customize scrollbar appearance */
+.sidebar::-webkit-scrollbar,
+.content-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb,
+.content-list::-webkit-scrollbar-thumb {
+    background-color: var(--black-color);
+    border-radius: 4px;
 }
 
 .sidebar.show {
