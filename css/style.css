@@ -11,7 +11,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+a{
+    text-decoration: none;
+}
 /* Base Styles */
 body {
     font-family: Arial, sans-serif;
@@ -262,15 +264,18 @@ main {
     transition: transform 0.2s;
 }
 
-.book-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
+.book-listGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .book {
     width: 120px;
+    margin: auto;
+    padding: auto;
     text-align: center;
+    margin-top: .5em;
+    margin-bottom: .5em;
 }
 
 .book img {
@@ -624,4 +629,34 @@ main {
     width: 100%;
     height: 100%;
     background-color: #00000070;
+}
+.category-books{
+    padding: 10px;
+}
+.bookCards{
+    display: flex;
+	flex-wrap: wrap;
+}
+.bookCard_info{
+    align-content: center;
+    flex: 1 0 50%;
+}
+.cat-pic{
+    align-content: center;
+    height: 250px;
+    border-radius: 10px;
+}
+.separation{
+    background-color: #1c1c1c;
+    width: 90%;
+    height: 3px;
+    margin: .5% auto;
+    position: relative;
+}
+.bookTitle{
+    font-weight: 800;
+}
+.bookPages{
+    font-weight: 300;
+    color: #888;
 }
