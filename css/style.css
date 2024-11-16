@@ -446,13 +446,11 @@ main {
 
 .content-list h1 {
     font-size: 30px;
-    color: var(--black-color);
     margin-bottom: 20px;
 }
 
 .content-list h2 {
     font-size: 20px;
-    color: var(--black-color);
     margin-bottom: 20px;
 }
 
@@ -466,6 +464,11 @@ main {
     padding: 15px;
     border-style: solid hidden hidden hidden;
     border-width: 2px;
+
+    cursor: pointer;
+}
+.book-item:hover {
+    color: var(--primary-color);
 }
 
 .tags {
@@ -490,19 +493,16 @@ main {
 
 .info h3 {
     font-size: 18px;
-    color: #333;
     margin-bottom: 5px;
 }
 
 .info p {
     font-size: 14px;
-    color: #666;
 }
 
 .space-flex {
     margin-left: auto;
     font-size: 24px;
-    color: #888;
     cursor: pointer;
 }
 
