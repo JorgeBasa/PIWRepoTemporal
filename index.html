@@ -166,21 +166,34 @@
             </div>
         </div>
         <!-- Formlario -->
-        <form>
+        <form enctype="multipart/form-data" method="POST">
+            <!-- Sección de carga de imágenes -->
+            <div class="image-upload">
+                <p>Portada del Libro</p>
+                <div class="upload-box">
+                    <span>+</span>
+                    <p>Cargar Imagen</p>
+                    <input type="file" name="portada">
+                </div>
+            </div>
+            <!-- ---------------------------- -->
             <div class="form-group">
-                <input type="text" placeholder="Autor" required>
-                <input type="text" placeholder="Editorial" required>
+                <input type="text" placeholder="Titulo" name="titulo" required>
             </div>
             <div class="form-group">
-                <input type="text" placeholder="Género" required>
-                <input type="date" placeholder="Fecha de Publicación" required>
+                <input type="text" placeholder="Autor" name="autor" required>
+                <input type="text" placeholder="Editorial" name="editorial" required>
             </div>
             <div class="form-group">
-                <input type="text" placeholder="No. de Páginas/Capítulos" required>
+                <input type="text" placeholder="Género" name="genero" required>
+                <input type="number" placeholder="Año de Publicación" name="fecha"  required>
             </div>
-            <textarea placeholder="Descripción/Sinopsis (Max. 1000 caracteres)" maxlength="1000" required></textarea>
+            <div class="form-group">
+                <input  rows="4" type="number" placeholder="No. de Páginas/Capítulos" name="paginas" required>
+            </div>
+            <textarea placeholder="Descripción/Sinopsis (Max. 1000 caracteres)" maxlength="1000" name="descripcion" required></textarea>
 
-            <button type="submit"><h1>AGREGAR</h1></button>
+            <button type="submit" name="btnform" value="Submit"><h1>AGREGAR</h1></button>
         </form>
     </div>
 
