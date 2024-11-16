@@ -255,29 +255,35 @@ main {
 
     border-style: solid;
     border-color: var(--black-color);
-
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-.trending-books:hover {
-    transform: scale(1.1);
-    transition: transform 0.2s;
 }
 
 .book-listGrid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-
 .book {
-    width: 120px;
+    width: 160px;
     margin: auto;
     padding: auto;
     text-align: center;
     margin-top: .5em;
     margin-bottom: .5em;
-}
 
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.book:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+@media (max-width: 786px) {
+    .book-listGrid{
+        grid-template-columns: 1fr;
+    }
+    .book {
+        width: 260px;
+    }
+}
 .book img {
     width: 100%;
     border-radius: 5px;
@@ -664,9 +670,9 @@ main {
     color: #888;
 }
 
-/* Estructura general del Add */
+/* ---------- Estructura general del Add formulario --------- */
 
-/* Sección de carga de imágenes */
+
 .image-upload p {
     font-size: 14px;
     color: var(--gray-color);
@@ -686,6 +692,7 @@ main {
     color: var(--gray-color);
     cursor: pointer;
     transition: background-color 0.3s;
+    position: relative;
 }
 
 .upload-box:hover {
@@ -695,6 +702,15 @@ main {
 .upload-box span {
     font-size: 36px;
     font-weight: bold;
+}
+.upload-box input[type="file"] {
+    opacity: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
 }
 
 /* Estilos del formulario */
@@ -712,6 +728,7 @@ form {
 
 input[type="text"],
 input[type="date"],
+input[type="number"],
 textarea {
     width: 100%;
     padding: 10px;
@@ -726,6 +743,7 @@ textarea {
 
 input[type="text"]:focus,
 input[type="date"]:focus,
+input[type="number"]:focus,
 textarea:focus {
     border-color: var(--primary-color);
 }
